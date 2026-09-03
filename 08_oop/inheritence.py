@@ -1,20 +1,27 @@
-# Inheritance means one class can reuse attributes and methods from another class.
+"""
+Inheritance means one class can reuse attributes
+and methods from another class.
+"""
 
-class Animal:
+class BankAccount:
 
-    def __init__(self, name):
+    def __init__(self, name, balance):
         self.name = name
+        self.balance = balance
 
-    def eat(self):
-        print(f"{self.name} is eating")
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"€{amount} deposited. New balance: €{self.balance}")
+
+class SavingsAccount(BankAccount):
+
+    def add_interest(self):
+        interest = self.balance * 0.05
+        self.balance += interest
+        print(f"Interest added: €{interest}")
 
 
-class Dog(Animal):
+account = SavingsAccount("Prashant", 1000)
 
-    def bark(self):
-        print(f"{self.name} says Woof!")
-
-dog = Dog("Buddy")    
-
-dog.eat()  # Inherited method from Animal class
-dog.bark()  # Method from Dog class
+account.deposit(500)
+account.add_interest()
