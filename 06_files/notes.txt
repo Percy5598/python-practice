@@ -1,0 +1,2 @@
+I am learning Python.
+I am practicing file handling.
