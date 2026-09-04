@@ -2,7 +2,9 @@
 Encapsulation means keeping an object's internal data
 controlled and deciding how that data can be accessed
 or changed. Python uses _ or __ to indicate that a
-variable or method is intended to be private.    
+variable or method is intended to be private.  
+_balance  → "internal, please don't touch directly"
+__balance → stronger name-mangling convention  
 """
 class BankAccount:
 
