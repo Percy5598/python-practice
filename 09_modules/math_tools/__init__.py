@@ -10,4 +10,5 @@ from math_tools import add, multiply, mean
 
 """
 
-from .calculator import add
+from .calculator import add, subtract, multiply, divide
+from .statistics import mean, maximum, minimum
