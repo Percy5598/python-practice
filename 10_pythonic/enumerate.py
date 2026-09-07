@@ -4,6 +4,13 @@ names = ["Alice", "Bob", "Charlie"]
 
 for i in range(len(names)):
     print(i, names[i])
+
+Prefer 
+for index, value in enumerate(values):
+
+Instead of 
+for index in range(len(values)):
+    value = values[index]        
 """
 names = ["Alice", "Bob", "Charlie"]
 
