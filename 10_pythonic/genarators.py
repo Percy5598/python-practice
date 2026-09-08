@@ -27,3 +27,6 @@ def get_numbers():
 numbers = get_numbers()
 print(numbers)
 
+# Using generators
+for number in numbers:
+    print(number)
