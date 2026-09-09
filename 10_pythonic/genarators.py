@@ -2,6 +2,7 @@
 Generators are important because they let Python 
 produce values one at a time instead of storing 
 everything in memory at once.
+
 yield 1 → pause
           ↓
        ask again
@@ -11,6 +12,8 @@ yield 2 → pause
        ask again
           ↓
 yield 3
+
+Generators reduce the memory usage as it processess one row at a time
 """
 # The entire list is created in memory.
 def get_numbers():
