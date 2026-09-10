@@ -44,8 +44,6 @@ Reports the results
            PASS           FAIL
 """     
 
-
-
 def test_total():
     numbers = [10, 20, 30]
     assert sum(numbers) == 60
